@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>center2</title>
+	<style type="text/css">
+		.container1{
+			height: 400px;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center; /*水平居中*/
+			align-items: center; /*垂直居中*/
+		}
+		.center1{
+			height: 200px;
+			width: 200px;
+			background-color: #21cfbb;
+			text-align: center;
+		}
+		.container2{
+			height: 400px;
+			width: 100%;
+			display: table;
+		}
+		.wrapper2{
+			display: table-cell;/*table-cell的元素不能设百分比宽高,子元素设为table-cell会充满设置了display: table的父元素*/
+			vertical-align: middle;
+			text-align: center;
+		}
+		.center2{
+			display: inline-block;/*用table居中得把子元素设为行内元素*/
+			width: 200px;
+			height: 200px;
+			background-color: #21cfbb;
+		}
+	</style>
+</head>
+<body>
+	<div class = "container1">
+		<div class = "center1">1</div>
+	</div>
+	<div class = "container2">
+		<div class = "wrapper2">
+			<div class = "center2">2</div>
+		</div>
+	</div>
+</body>
+</html>
